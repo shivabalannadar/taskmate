@@ -68,15 +68,16 @@ def pending_task(request, task_id):
 
 def index(request):
     context = {'index_text':"welcome to the home page",}
+
     return render (request, 'index.html',context)
     
 
 def contact(request):
-    context = {'contact_text':"welcome to contact page",}
+    context = {  'contact_text':"welcome to contact page", }
     return render (request, 'contact.html',context)
     
 def about(request):
-    context = {'about_text':"welcome to about",}
+    context = { 'about_text':"welcome to about", }
     return render (request, 'about.html',context)
 
     

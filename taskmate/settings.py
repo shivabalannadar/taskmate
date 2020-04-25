@@ -50,7 +50,7 @@ ROOT_URLCONF = 'taskmate.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/pydjango/django-project/taskmate/taskmate/templates',],
+        'DIRS': ['/pydjango/django-project/taskmate/taskmate/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
