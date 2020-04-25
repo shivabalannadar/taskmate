@@ -68,7 +68,6 @@ def pending_task(request, task_id):
 
 def index(request):
     context = {'index_text':"welcome to the home page",}
-
     return render (request, 'index.html',context)
     
 

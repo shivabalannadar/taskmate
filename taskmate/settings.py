@@ -50,7 +50,7 @@ ROOT_URLCONF = 'taskmate.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/pydjango/django-project/taskmate/taskmate/templates'],
+        'DIRS': [(os.path.join(BASE_DIR, 'templates')),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -115,7 +115,7 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles') 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = ['/pydjango/django-project/taskmate/taskmate/static']
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
